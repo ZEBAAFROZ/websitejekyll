@@ -1,0 +1,33 @@
+---
+layout: default
+title: Research
+---
+
+<div class="research-footer">
+    <h2 class="research-section-title">RESEARCH FOCUS</h2>
+    <div class="research-content">
+        <p>At {{ site.title }}, our research is driven by the belief that language technology can transform the way we interact with the world. Our work spans various domains, including Mental Health, Fake News, Claims, Propaganda, and Deception, where we apply cutting-edge NLP techniques to address complex challenges. Our projects not only push the boundaries of theoretical understanding but also offer practical solutions to real-world problems.</p>
+        <br>
+        <p>In each project, we strive to combine rigorous research methodologies with innovative approaches, ensuring that our contributions are both impactful and relevant. Our team is dedicated to advancing the field of NLP through interdisciplinary collaboration, and we take pride in sharing our findings with the broader community.</p>
+    </div>
+
+    <div class="research-areas">
+        <div class="research-grid">
+            {% for area in site.data.research_areas %}
+            <div class="research-card" data-research="{{ area.title | slugify }}">
+                <i class="{{ area.icon }}"></i>
+                <h3>{{ area.title }}</h3>
+            </div>
+            {% endfor %}
+
+            <div class="description-container" style="height:0;">
+                {% for area in site.data.research_areas %}
+                <div class="description-box" id="{{ area.title | slugify }}-desc">
+                    <h3>{{ area.title }}</h3>
+                    <p>{{ area.description }}</p>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>

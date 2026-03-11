@@ -1,0 +1,48 @@
+---
+layout: default
+title: Publications
+---
+
+<div class="pub-footer">
+    <div class="pub">
+        <h1>PUBLICATIONS</h1>
+        <p style="margin-left:4%; margin-bottom:1rem;">For up-to-date publications, please visit 
+            <a href="https://scholar.google.co.in/citations?user=KUcO6LAAAAAJ&hl=en" target="_blank" style="color:var(--secondary-color);">Google Scholar</a>
+        </p>
+
+        <div class="pub-box publications-container">
+            <!-- Search and Filter Controls -->
+            <div style="display:flex; gap:1rem; align-items:center; padding:1rem 2rem; flex-wrap:wrap;">
+                <input type="text" id="searchInput" placeholder="Search publications..." 
+                    style="padding:0.5rem 1rem; border:1px solid #ddd; border-radius:0.5rem; font-size:1rem; flex:1; min-width:200px;">
+                <select id="yearFilter" style="padding:0.5rem 1rem; border:1px solid #ddd; border-radius:0.5rem; font-size:1rem;">
+                    <option value="all">All Years</option>
+                </select>
+                <div class="category-buttons" style="display:flex; gap:0.5rem;">
+                    <button onclick="filterCategory('all')" 
+                        style="padding:0.5rem 1rem; border:1px solid var(--primary-color); border-radius:0.5rem; cursor:pointer; background:var(--primary-color); color:white;">All</button>
+                    <button onclick="filterCategory('Conference')" 
+                        style="padding:0.5rem 1rem; border:1px solid var(--primary-color); border-radius:0.5rem; cursor:pointer; background:white; color:var(--primary-color);">Conference</button>
+                    <button onclick="filterCategory('Journal')" 
+                        style="padding:0.5rem 1rem; border:1px solid var(--primary-color); border-radius:0.5rem; cursor:pointer; background:white; color:var(--primary-color);">Journal</button>
+                </div>
+            </div>
+
+            <div class="publications-list">
+                {% for pub in site.data.publications %}
+                <div class="publication-item" data-category="{{ pub.category }}">
+                    <strong>{{ pub.title }}</strong><br>
+                    {{ pub.authors }}<br>
+                    <em>{{ pub.venue }}</em>, {{ pub.year }}
+                    {% if pub.link and pub.link != "" %}
+                    <a href="{{ pub.link }}" class="pub-link" target="_blank">[Link]</a>
+                    {% endif %}
+                </div>
+                <hr>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<button id="scrollToTop">&#8679;</button>

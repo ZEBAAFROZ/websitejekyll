@@ -1,0 +1,58 @@
+---
+layout: default
+title: Contact
+---
+
+<div class="contact-footer">
+    <h2 class="contact-heading">CONTACT US</h2>
+    <div class="contact-container">
+
+        <div class="contact-block" onclick="toggleMap()">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>Visit Us</h3>
+            <p>{{ site.data.contact.address }}</p>
+        </div>
+
+        <div class="contact-block">
+            <i class="fas fa-envelope"></i>
+            <h3>Email Us</h3>
+            <p>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=flame-lab@iiitd.ac.in">
+                    {{ site.data.contact.email }}
+                </a>
+            </p>
+        </div>
+
+        <div class="contact-block">
+            <i class="fas fa-share-alt"></i>
+            <h3>Connect With Us</h3>
+            <div class="social-icons">
+                {% if site.social.twitter %}
+                <a href="{{ site.social.twitter }}" target="_blank"><i class="fab fa-twitter"></i></a>
+                {% endif %}
+                {% if site.social.linkedin %}
+                <a href="{{ site.social.linkedin }}" target="_blank"><i class="fab fa-linkedin"></i></a>
+                {% endif %}
+                {% if site.social.github %}
+                <a href="{{ site.social.github }}" target="_blank"><i class="fab fa-github"></i></a>
+                {% endif %}
+                {% if site.social.scholar %}
+                <a href="{{ site.social.scholar }}" target="_blank"><i class="fas fa-graduation-cap"></i></a>
+                {% endif %}
+            </div>
+        </div>
+
+        <div id="map-container">
+            <iframe 
+                src="{{ site.data.contact.map_url }}" 
+                width="100%" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+
+    </div>
+</div>

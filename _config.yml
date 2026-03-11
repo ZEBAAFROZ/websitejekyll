@@ -1,0 +1,40 @@
+title: FLaMe Research Lab
+description: Frontier in Language Understanding and Neural Modeling is a hub of innovation and collaboration, committed to advancing the field of Natural Language Processing (NLP). Our team of dedicated researchers, students, and engineers work together to develop cutting-edge algorithms that enhance machine language. Our research covers a broad spectrum, from foundational work in computational linguistics and machine learning to practical applications in human language technology.
+
+baseurl: ""
+url: ""
+
+collections:
+  team_members:
+    output: true
+    permalink: /team/:name
+    
+  research_areas:
+    output: true
+    permalink: /research/:name
+
+defaults:
+  - scope:
+      path: ""
+      type: "team_members"
+    values:
+      layout: "team_member"
+  - scope:
+      path: ""
+      type: "research_areas"
+    values:
+      layout: "research_area"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+social:
+  twitter: https://x.com/flamenlp
+  linkedin: https://www.linkedin.com/company/flamenlp/?viewAsMember=true
+  github: https://github.com/flamenlp
+  scholar: https://scholar.google.co.in/citations?user=KUcO6LAAAAAJ&hl=en
+
+# 💥 REQUIRED FIX
+exclude:
+  - _site

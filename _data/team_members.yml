@@ -1,0 +1,216 @@
+# Faculty
+- name: "Dr. Md. Shad Akhtar"
+  category: "faculty"
+  title: "Assistant Professor"
+  education: "Ph.D, IIIT Delhi"
+  image: "/assets/images/shad.jpg"
+  website: "https://www.iiitd.ac.in/shad"
+  linkedin: "https://www.linkedin.com/in/shadakhtar/"
+  google_scholar: "https://scholar.google.co.in/citations?user=KUcO6LAAAAAJ&hl=en"
+
+# PhD Students
+- name: "Aseem Srivastava"
+  category: "phd"
+  joined: "August, 2020"
+  research_focus: "AI in Mental-Health"
+  image: "/assets/images/aseem.jpg"
+  website: "https://as3eem.github.io/"
+  linkedin: "https://www.linkedin.com/in/as3eem/"
+  google_scholar: "https://scholar.google.com/citations?user=kgykojoAAAAJ&hl=en&authuser=1"
+
+# PhD Students
+- name: "Megha Sundriyal"
+  category: "phd"
+  joined: "August, 2020"
+  research_focus: "Misinformation and Claims"
+  image: "/assets/images/megha.jpg"
+  website: "https://meghasundriyal.in/"
+  linkedin: "https://www.linkedin.com/in/sundriyalmegha/"
+  google_scholar: "https://scholar.google.com/citations?user=vbmdVSAAAAAJ"
+
+# PhD Students
+- name: "Abdullah Mazhar"
+  category: "phd"
+  joined: "December, 2023"
+  research_focus: "AI in Healthcare"
+  image: "/assets/images/abdullah.jpeg"
+  website: "#"
+  linkedin: "https://www.linkedin.com/in/abdullah-mazhar-129259164/?originalSubdomain=in"
+  google_scholar: "https://scholar.google.com/citations?user=yFJYyQkAAAAJ&hl=en"
+
+# PhD Students
+- name: "Zeba Afroz"
+  category: "phd"
+  joined: "December, 2023"
+  research_focus: "Decpetion and Propaganda"
+  image: "/assets/images/zeba.jpeg"
+  linkedin: "https://www.linkedin.com/in/zeba-afroz-676390186/"
+  google_scholar: "#"
+
+# PhD Students
+- name: "Aditya Bhardwaj"
+  category: "phd"
+  joined: "October, 2024"
+  research_focus: "AI in Healthcare"
+  image: "/assets/images/aditya.jpg"
+  website: "#"
+  linkedin: "https://www.linkedin.com/in/a-aditya-bhardwaj/"
+  google_scholar: "#"
+
+# PhD Students
+- name: "Abhishek Singh Yadav"
+  category: "phd"
+  joined: "July, 2025"
+  research_focus: "Deception Analysis"
+  image: "/assets/images/abhishek.jpg"
+  website: "#"
+  linkedin: "https://www.linkedin.com/in/abhishek-singh-yadav-70724a203/"
+  google_scholar: "#"
+
+# Research Associates
+- name: "Asbah Khan"
+  category: "ra"
+  joined: "October, 2024"
+  research_focus: "Propaganda Detection"
+  image: "/assets/images/asbah.jpg"
+  linkedin: "https://www.linkedin.com/in/asbah-khan-7a130222b/"
+
+- name: "Rajnandini Pujari"
+  category: "ra"
+  joined: "December, 2024"
+  research_focus: "COIL-D (Liasion Officer)"
+  image: "/assets/images/Rajnandini.jpg"
+  linkedin: ""
+
+- name: "Sakshum Sharma"
+  category: "ra"
+  joined: "January, 2025"
+  research_focus: "COIL-D (Technical)"
+  image: "/assets/images/Sakshum.jpg"
+  linkedin: "https://www.linkedin.com/in/sakshum-sharma-2000/"
+
+- name: "Meena Sharma"
+  category: "ra"
+  joined: "January, 2025"
+  research_focus: "COIL-D (Linguistics)"
+  image: "/assets/images/mina.jpg"
+  linkedin: "https://www.linkedin.com/in/meena-sharma-73b631157/"
+
+- name: "Vaishnavi Raikar"
+  category: "ra"
+  joined: "January, 2025"
+  research_focus: "COIL-D (Linguistics)"
+  image: "/assets/images/Vaishnavi.jpg"
+  linkedin: ""
+
+- name: "Siddhi Kerkar"
+  category: "ra"
+  joined: "January, 2025"
+  research_focus: "COID-D (Linguistics)"
+  image: "/assets/images/Siddhi.jpg"
+  linkedin: ""
+
+- name: "Nazia Akhtar"
+  category: "ra"
+  joined: "December, 2024"
+  research_focus: "COIL-D (Linguistics)"
+  image: "https://static.vecteezy.com/system/resources/previews/045/711/163/non_2x/default-avatar-female-profile-icon-grey-photo-placeholder-gray-profile-anonymous-face-picture-illustration-for-social-media-dating-profile-forum-vector.jpg"
+  linkedin: ""
+
+- name: "Samshul Arfin"
+  category: "ra"
+  joined: "January, 2025"
+  research_focus: "COIL-D (Linguistics)"
+  image: "https://static.vecteezy.com/system/resources/previews/045/711/185/non_2x/male-profile-picture-placeholder-for-social-media-forum-dating-site-chat-operator-design-social-profile-template-default-avatar-icon-flat-style-free-vector.jpg"
+  linkedin: ""
+
+- name: "Izza Moin"
+  category: "ra"
+  joined: "December, 2024"
+  research_focus: "COIL-D (Linguistics)"
+  image: "/assets/images/Izza.jpg"
+  linkedin: ""
+
+- name: "Prakash Tejwani"
+  category: "ra"
+  joined: "March, 2025"
+  research_focus: "COIL-D (Linguistics)"
+  image: "https://static.vecteezy.com/system/resources/previews/045/711/185/non_2x/male-profile-picture-placeholder-for-social-media-forum-dating-site-chat-operator-design-social-profile-template-default-avatar-icon-flat-style-free-vector.jpg"
+  linkedin: ""
+
+# MTech Students
+- name: "Shivam Kumar"
+  category: "mtech"
+  joined: "July, 2023"
+  research_focus: "Automatic Speech Recognition for Indian Languages"
+  image: "/assets/images/shivam.jpg"
+  linkedin: "https://www.linkedin.com/in/shivamtiwari2112/"
+
+- name: "Sourav Chakraborty"
+  category: "mtech"
+  joined: "January, 2024"
+  research_focus: "Reasoning in LLM "
+  image: "/assets/images/sourav.png"
+  linkedin: "https://www.linkedin.com/in/sourav-chakraborty-2a2b8a114/"
+
+# BTech Students
+- name: "Palaash Sen"
+  category: "btech"
+  research_focus: "Multimodal Learning"
+
+- name: "Harshit Choudhary"
+  category: "btech"
+  research_focus: "Claim Verification"
+
+- name: "Mohammad Kaif, N Narotam"
+  category: "btech"
+  research_focus: "Knowledge-graph Distillation"
+
+- name: "Jyotirmaya Singh, Arnav Agarwal, Aayush Ranjan"
+  category: "btech"
+  research_focus: "Propaganda Detection"
+
+- name: "Arjit Singh Arora"
+  category: "btech"
+  research_focus: "Narrative Summarization"
+
+- name: "Sanmay Sood, Siddharth Rajput"
+  category: "btech"
+  research_focus: "Dialects Detection In Indian Languages"
+
+- name: "Ankur Bohra, Himanshu Singh"
+  category: "btech"
+  research_focus: "QA system for Policy Documents"
+
+- name: "Jaleel Ahmed, Baljyot Singh Modi"
+  category: "btech"
+  research_focus: "Review Analysis and Summarization in Course Feedback"
+
+- name: "Dhruv Jain, Swapnil Panigrahi"
+  category: "btech"
+  research_focus: "Controllable Lay Summary"
+
+- name: "Udit"
+  category: "btech"
+  research_focus: "Fact Verification in Community Question Answering"
+
+- name: "Rahul Bharti, Soham Ghosh"
+  category: "btech"
+  research_focus: "Text-To-Speech in Code-mixed Language"
+
+- name: "Karan, Prithu Raj Singh"
+  category: "btech"
+  research_focus: "Counterspeech"
+
+- name: "Het Shah"
+  category: "btech"
+  research_focus: "AI for Mental Health"
+
+# Alumni
+- name: "Ayush Agarwal"
+  category: "alumni"
+  research_focus: "Assessing Trust in Mental Health Counseling Conversation (TCS Research)"
+
+- name: "Akshara Nair"
+  category: "alumni"
+  research_focus: "Incongruence Identification in Eyewitness Narratives (Natwest)"

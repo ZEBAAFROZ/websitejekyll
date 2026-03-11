@@ -1,0 +1,21 @@
+- path: "/assets/images/flame_lab.jpg"
+  alt: "Lab Image 1"
+  caption: "Lab Members @ FLaMe"
+  
+# do not change the first image
+
+- path: "/assets/images/IMG_0915_Original.jpg"
+  alt: "Lab Image 2"
+  caption: "Presenting work on dialogue summarization at EMNLP 2024 (Mains; Oral), Miami, FL"
+
+- path: "/assets/images/conf.jpg"
+  alt: "Lab Image 3"
+  caption: "Presenting AI-Driven Response Generation for Mental Health Counseling at WWW 2023"
+
+- path: "/assets/images/google.jpg"
+  alt: "Lab Image 4"
+  caption: "Members of FLaMe at Google reasearch week"
+
+- path: "/assets/images/COILD_IITD_2025.jpeg"
+  alt: "Lab Image 5"
+  caption: "COILD Language workshop IITD OCT 2025"

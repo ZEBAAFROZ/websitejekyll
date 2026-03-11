@@ -1,0 +1,11 @@
+- name: "Google"
+  image: "/assets/images/google.jpg"
+  url: "https://google.com"
+
+- name: "Research Lab"
+  image: "/assets/images/flame_lab.jpg"
+  url: "#"
+
+- name: "Partner 3"
+  image: "/assets/images/1.png"
+  url: "#"

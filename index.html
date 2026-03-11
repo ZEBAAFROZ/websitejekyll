@@ -1,0 +1,74 @@
+---
+layout: default
+title: Home
+---
+
+<div class="image-gallery">
+    <div class="gallery-container">
+        {% for item in site.data.gallery %}
+        <div class="gallery-item{% if forloop.first %} active{% endif %}">
+            <img src="{{ item.path | relative_url }}" alt="{{ item.alt }}">
+            <div class="gallery-caption">{{ item.caption }}</div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+<div class="home">
+    <div class="box wrap">
+        <h2>Welcome to {{ site.title }}</h2>
+        <p>{{ site.description }}</p>
+        <a href="{{ '/research' | relative_url }}" class="cta-button">Explore Our Research</a>
+    </div>
+</div>
+
+<div class="news-container">
+    <div class="news-box">
+        <h3>Latest News</h3>
+        {% assign shown = 0 %}
+        {% for item in site.data.news %}
+            {% if shown < 5 %}
+            <div class="news-item">
+                <span class="news-date">{{ item.date }}</span>
+                <span>{{ item.content }}</span>
+            </div>
+            {% assign shown = shown | plus: 1 %}
+            {% else %}
+            <div class="news-item hidden-row">
+                <span class="news-date">{{ item.date }}</span>
+                <span>{{ item.content }}</span>
+            </div>
+            {% endif %}
+        {% endfor %}
+        <a class="view-more" onclick="toggleRows()">view more</a>
+    </div>
+
+    <div class="notifications-box">
+        <h3>Recent Notifications</h3>
+        <div class="notifications-content">
+            <div class="notifications-scroll">
+                {% for item in site.data.notifications %}
+                <div class="notification-item">
+                    <span class="notification-date">{{ item.date }}</span>
+                    <span>{{ item.content }}</span>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="home">
+    <h2>Contributors &amp; Sponsors</h2>
+    <div class="grid">
+        {% for sponsor in site.data.sponsors %}
+        <div>
+            <a href="{{ sponsor.url }}" target="_blank">
+                <img src="{{ sponsor.image | relative_url }}" alt="{{ sponsor.name }}" style="max-width:150px; max-height:80px; object-fit:contain;">
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<button id="scrollToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">&#8679;</button>

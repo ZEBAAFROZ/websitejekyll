@@ -1,0 +1,19 @@
+- title: "Automatic Speech Recognition"
+  icon: "fas fa-robot"
+  description: "The goal is to improve the existing state-of-the-art ASR system or propose a new model for automatic speech recognition for codemixed languages."
+
+- title: "Healthcare"
+  icon: "fas fa-heartbeat"
+  description: "We are working on developing AI-driven models for healthcare, developing AI-driven models for mental health counseling and for learning disorders."
+
+- title: "Explainable AI"
+  icon: "fas fa-code-branch"
+  description: "The goal is to use knowledge graphs and LLMs for explaining social biases, hate speech etc."
+
+- title: "Information Disorder"
+  icon: "fas fa-project-diagram"
+  description: "This project is dedicated to developing advanced models for identifying and mitigating harmful content on social media platforms. We focus on combating the spread of fake news, misinformation, propaganda, and hate speech."
+
+- title: "COIL-D"
+  icon: "fas fa-language"
+  description: "The project COIL-D is in collaboration with Bhasini which aims at promoting the creation of language resources for Human Language Technology (HLT) applications, especially for Machine Translation; Creating Leaderboards for Machine Translation; and Creating benchmark setups for various linguistic tools."

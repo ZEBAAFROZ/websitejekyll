@@ -1,0 +1,19 @@
+<footer>
+    <div class="footer-content">
+        <p>&copy; {{ site.title }} {{ 'now' | date: "%Y" }}</p>
+        <div class="social-links">
+            {% if site.social.twitter %}
+            <a href="{{ site.social.twitter }}" target="_blank"><i class="fab fa-twitter"></i></a>
+            {% endif %}
+            {% if site.social.linkedin %}
+            <a href="{{ site.social.linkedin }}" target="_blank"><i class="fab fa-linkedin"></i></a>
+            {% endif %}
+            {% if site.social.github %}
+            <a href="{{ site.social.github }}" target="_blank"><i class="fab fa-github"></i></a>
+            {% endif %}
+            {% if site.social.scholar %}
+            <a href="{{ site.social.scholar }}" target="_blank"><i class="fas fa-graduation-cap"></i></a>
+            {% endif %}
+        </div>
+    </div>
+</footer>

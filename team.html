@@ -1,0 +1,120 @@
+---
+layout: default
+title: Team
+---
+
+<main>
+    <h2 class="team-heading">OUR TEAM</h2>
+
+    <!-- Faculty -->
+    <div class="faculty-phd-container">
+        <div class="faculty-member">
+            <h2>Faculty</h2>
+            {% assign faculty = site.data.team_members | where: "category", "faculty" %}
+            {% for member in faculty %}
+            <img src="{{ member.image | relative_url }}" alt="{{ member.name }}">
+            <h3>{{ member.name }}</h3>
+            <p class="position">{{ member.title }}</p>
+            <p>{{ member.education }}</p>
+            <div class="social-links">
+                {% if member.website and member.website != "#" %}
+                <a href="{{ member.website }}" target="_blank"><i class="fas fa-globe"></i></a>
+                {% endif %}
+                {% if member.linkedin and member.linkedin != "" %}
+                <a href="{{ member.linkedin }}" target="_blank"><i class="fab fa-linkedin"></i></a>
+                {% endif %}
+                {% if member.google_scholar and member.google_scholar != "#" %}
+                <a href="{{ member.google_scholar }}" target="_blank"><i class="fas fa-graduation-cap"></i></a>
+                {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+
+        <!-- PhD Students -->
+        <div class="phd-member">
+            <h2>Ph.D Students</h2>
+            <div class="member-grid">
+                {% assign phd = site.data.team_members | where: "category", "phd" %}
+                {% for member in phd %}
+                <div class="member-card">
+                    <img src="{{ member.image | relative_url }}" alt="{{ member.name }}">
+                    <h3>{{ member.name }}</h3>
+                    <p class="position">Joined: {{ member.joined }}</p>
+                    <p>Research: {{ member.research_focus }}</p>
+                    <div class="social-links">
+                        {% if member.website and member.website != "#" %}
+                        <a href="{{ member.website }}" target="_blank"><i class="fas fa-globe"></i></a>
+                        {% endif %}
+                        {% if member.linkedin and member.linkedin != "" %}
+                        <a href="{{ member.linkedin }}" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        {% endif %}
+                        {% if member.google_scholar and member.google_scholar != "#" %}
+                        <a href="{{ member.google_scholar }}" target="_blank"><i class="fas fa-graduation-cap"></i></a>
+                        {% endif %}
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    <!-- Research Associates -->
+    <h2 class="team-heading">Research Associates</h2>
+    <div class="team-grid">
+        {% assign ra = site.data.team_members | where: "category", "ra" %}
+        {% for member in ra %}
+        <div class="team-member">
+            <img src="{{ member.image }}" alt="{{ member.name }}">
+            <h3>{{ member.name }}</h3>
+            <p class="position">Joined: {{ member.joined }}</p>
+            <p>Research: {{ member.research_focus }}</p>
+            {% if member.linkedin and member.linkedin != "" %}
+            <div class="social-links">
+                <a href="{{ member.linkedin }}" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+            {% endif %}
+        </div>
+        {% endfor %}
+    </div>
+
+    <!-- MTech Students -->
+    <h2 class="team-heading">M. Tech Students</h2>
+    <div class="team-grid">
+        {% assign mtech = site.data.team_members | where: "category", "mtech" %}
+        {% for member in mtech %}
+        <div class="team-member">
+            <img src="{{ member.image | relative_url }}" alt="{{ member.name }}">
+            <h3>{{ member.name }}</h3>
+            <p class="position">Joined: {{ member.joined }}</p>
+            <p>Research: {{ member.research_focus }}</p>
+            {% if member.linkedin and member.linkedin != "" %}
+            <div class="social-links">
+                <a href="{{ member.linkedin }}" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+            {% endif %}
+        </div>
+        {% endfor %}
+    </div>
+
+    <!-- BTech Students -->
+    <h2 class="team-heading">B. Tech Students</h2>
+    <div class="list-member">
+        <ul>
+            {% assign btech = site.data.team_members | where: "category", "btech" %}
+            {% for member in btech %}
+            <li>{{ member.name }} &mdash; Research: {{ member.research_focus }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <!-- Alumni -->
+    <h2 class="team-heading">Alumni</h2>
+    <div class="list-member">
+        <ul>
+            {% assign alumni = site.data.team_members | where: "category", "alumni" %}
+            {% for member in alumni %}
+            <li>{{ member.name }} &mdash; Research: {{ member.research_focus }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</main>
